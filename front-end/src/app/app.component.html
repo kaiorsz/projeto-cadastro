@@ -1,0 +1,59 @@
+
+<h1>
+Cadastro de Vendedores
+</h1>
+<form (ngSubmit)="validateSaveSeller()" class="container">
+  <div>
+    <label for="nameSeller">Nome Completo: </label>
+    <input type="text"id="nameSeller" name="nameSeller" [(ngModel)]="nameSeller">
+  </div>
+  <div>
+    <label for="codeSeller">Código do vendedor: </label>
+    <input type="text"id="codeSeller" name="codeSeller" [(ngModel)]="codeSeller">
+  </div>
+  <div>
+    <button type="submit">Salvar</button>
+  </div>
+
+</form>
+
+<h1>
+  Cadastro de Clientes
+</h1>
+<form (ngSubmit)="validateSaveClient()" class="container">
+  <div>
+    <label for="nameClient">Nome Completo: </label>
+    <input type="text"id="nameClient" name="nameClient" [(ngModel)]="nameClient">
+  </div>
+  <div>
+    <label for="codeClient">Código do cliente: </label>
+    <input type="text"id="codeClient" name="codeClient" [(ngModel)]="codeClient">
+  </div>
+  <div>
+    <label for="codeSellerClient">Código do Vendedor do cliente: </label>
+    <input type="text"id="codeSellerClient" name="codeClient" [(ngModel)]="codeSellerClient">
+  </div>
+  <div>
+    <button type="submit">Salvar</button>
+  </div>
+
+</form>
+
+
+<h1>
+  Cadastro de Produtos
+</h1>
+<form (ngSubmit)="validateSaveProduct()" class="container">
+  <div>
+    <label for="nameProduct">Nome do produto: </label>
+    <input type="text"id="nameProduct" name="nameProduct" [(ngModel)]="nameProduct">
+  </div>
+  <div>
+    <label for="codeProduct">Código do produto: </label>
+    <input type="text"id="codeProduct" name="codeProduct" [(ngModel)]="codeProduct">
+  </div>
+  <div>
+    <button type="submit">Salvar</button>
+  </div>
+
+</form>
